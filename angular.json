@@ -70,7 +70,7 @@
                 }
               ]
             },
-            "dev": {
+            "development": {
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -96,11 +96,11 @@
             "staging": {
               "browserTarget": "productivity-planner:build:staging"
             },
-            "dev": {
-              "browserTarget": "productivity-planner:build:dev"
+            "development": {
+              "browserTarget": "productivity-planner:build:development"
             }
           },
-          "defaultConfiguration": "dev"
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
