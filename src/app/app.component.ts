@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { environment } from 'src/environments/environment.staging';
+import { Component, inject } from '@angular/core';
+import { AuthentificationService } from './core/authentification.service';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,12 @@ import { environment } from 'src/environments/environment.staging';
 })
 export class AppComponent {
   title = 'productivity-planner';
-  IsProductionEnvironnement = environment.production;
-  firebaseProjectId = environment.firebase.projectId; 
+ readonly #authentificationService = inject(AuthentificationService);
+ constructor(){
+  this.#authentificationService
+  .register('dieng.fa@gmail.com','ddddddd')
+  .subscribe((response: unknown)=> {
+    console.log(response);
+  });
+ }
 }
