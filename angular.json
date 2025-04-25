@@ -93,13 +93,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "productivity-planner:build:production"
+              "buildTarget": "productivity-planner:build:production"
             },
             "staging": {
-              "browserTarget": "productivity-planner:build:staging"
+              "buildTarget": "productivity-planner:build:staging"
             },
             "development": {
-              "browserTarget": "productivity-planner:build:development"
+              "buildTarget": "productivity-planner:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -107,7 +107,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "productivity-planner:build"
+            "buildTarget": "productivity-planner:build"
           }
         },
         "test": {
